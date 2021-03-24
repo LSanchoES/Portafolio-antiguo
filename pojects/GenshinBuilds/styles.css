@@ -1,0 +1,418 @@
+@font-face{
+    font-family: 'WebSymbolsRegular';
+    src: url(fonts/websymbols-regular-webfont.eot);
+    src: url(fonts/websymbols-regular-webfont.eot?#iefix) format('embedded-opentype'),
+        url(fonts/websymbols-regular-webfont.woff) format('woff'),
+        url(fonts/websymbols-regular-webfont.ttf) format('truetype'),
+        url(fonts/websymbols-regular-webfont.svg#WebSymbolsRegular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow-x: hidden;
+}
+.container-fluid{
+    padding: 0px;
+}
+header{
+    max-width:max-content;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    height: 200px;
+    text-align: center;
+    color: white;
+    border-bottom: 3px solid #afafb8;
+    background: #0c0c24;
+}
+.mainbanner{
+    width: 100%;
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    clip: rect(0px,100000px,200px,0px) !important;
+    background: #1d2029;
+    opacity: 0.1;
+}
+#titulo{
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px !important;
+    font-size: 40px; 
+    width: 500px;
+}
+
+.navbar{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+}
+.navbar li a{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    transition: all 500ms;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 15px;
+    color: white;
+    background-color: #1d202959;
+    box-shadow: 0px 0px 3px white inset;
+
+    
+}
+.navbar li a:hover{
+    cursor: pointer;
+    color: rgb(16, 155, 236);
+    text-decoration: none;
+}
+.active{
+    color: rgb(16, 221, 236) !important;
+
+}
+#fondopantalla{
+    background: #00041d;
+    padding: 50px;
+}
+#publi{
+    width: 75%;
+    height: 100px;
+    border: 3px solid rgba(255, 255, 255, 0.657);
+    border-radius: 2px;
+}
+#divBuscador{
+    display: inline-flex;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
+    max-height: 50px;
+}
+#lupa{
+    font-family: 'WebSymbolsRegular';
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.657);
+    font-size: 20px;
+    margin: 10px;
+}
+#lupa:hover{
+    cursor: pointer;
+}
+#buscador{
+        background-color: transparent;
+        border: 0px;
+        outline: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        width:250px;
+        color:transparent;
+        cursor:default;
+        color: #a6abbd;
+        font-weight: bold;
+        border: 1px solid rgb(24, 23, 23);
+        border-radius: 12px;
+}
+#selectores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    place-content: center;
+    flex-direction: column;
+    margin-top: 5px;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#armasSelect{
+    max-height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.elementoPeque{
+    width: 60px;
+    height: 60px;
+    border: 3px solid rgba(255, 255, 255, 0.657);
+    border-radius: 12px;
+    padding: 3px;
+    transition: all 300ms;
+    margin: 5px;
+}
+.elementoPeque:hover{
+    box-shadow: 0px 0px 5px white inset;
+    cursor: pointer;
+    transform: translateY(1px);
+}
+#personajesFila{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#personajesFila a{
+    margin: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+#personajeUnico{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.personaje{
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgba(255, 255, 255, 0.657);
+    border-radius: 12px;
+    padding: 1px;
+    transition: all 300ms;
+}
+.personaje:hover{
+    box-shadow: 0px 0px 5px white inset;
+    cursor: pointer;
+    transform: translateY(1px);
+}
+.miniElemento{
+    position: relative;
+    top: 60px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    
+}
+.nombrePersonaje{
+    justify-content: center;
+    width:80px;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.657);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.selected{
+    border: 5px solid rgb(154, 154, 253);
+}
+.hide{
+    display: none;
+}
+.hide1{
+    display: none;
+}
+.bloquePersonaje{
+    
+    overflow: hidden;
+}
+footer{
+    max-width: 100%;
+    height: 10rem;
+    max-height: 100%;
+    background-color: #0c0c24;
+    margin: 0px;
+    border-top: 3px solid rgba(255, 255, 255, 0.657);
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding: 20px;
+    overflow-y: hidden;
+}
+.bloqueFooter{
+    display: flex;
+    padding: 20px;
+    width: 50%;
+    margin-left: 2px;
+    color: rgba(255, 255, 255, 0.657);
+
+}
+
+#bloque1{
+    display: flex;
+    justify-content: center;
+}
+#bloque2{
+    display: flex;
+    justify-content: center;
+
+}
+#bloque2 ul{
+    list-style-type: none;
+}
+
+#bloque2 ul li a{
+    color: rgba(255, 255, 255, 0.657);
+}
+.buildPersonaje{
+    margin-top: 10px;
+
+}
+#cuadroBuilds{
+    width: 75%;
+    height: 100%;
+/*     border: 3px solid rgba(248, 0, 0, 0.657); */
+    border-radius: 2px;
+    padding: 20px;
+}
+.buildCompleta{
+    margin-top: 20px !important;
+}
+.cuadroBuildsInterior{
+    display: flex;
+    width: 100%;
+    height: auto;
+    color: white;
+    border: 3px solid white;
+    border-radius: 12px;
+    padding: 20px;
+    background: #0c0c24;
+}
+.descripcion{
+    color: white;
+}
+.bloqueStats{
+    align-content: center;
+    text-align: center;
+    margin-right: 20px;
+}
+.bloqueStats p{
+    margin-left: 5px;
+    margin-top: 15px !important;
+    background: #00041d;
+    max-width: 100%;
+    text-shadow: 0px 0px 5px black;
+}
+.bloqueStats h4{
+    color: #3ea8ff;
+}
+.tituloArtefacto{
+    color: #3ea8ff;
+    text-shadow: 0px 0px 5px black;
+}
+.artefacto{
+    width: 60px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 5px;
+    background-color: #00041d;
+    
+}
+.textoArtefacto{
+    margin-left: auto;
+    margin-right: auto;
+    margin: 5px;
+}
+@media (min-height: 1113px){
+    footer{
+        height: 40rem;
+    }
+}
+
+@media(max-width: 920px) {
+    #fondopantalla{
+        padding: 30px;
+    }
+    .cuadroBuildsInterior{
+        padding: 5px;
+    }
+}
+
+@media(max-width: 649px) {
+    #fondopantalla{
+        padding: 30px;
+    }
+    .personaje{
+        width: 80px;
+        height: 80px;
+    }
+    .nombrePersonaje{
+        font-size: 14px;
+        margin-left: 3px;
+    }
+    .miniElemento{
+        right: 10px;
+        top: 55px;
+        width: 15px;
+        height: 15px;
+    }
+    .elementoPeque{
+        width: 50px;
+        height: 50px;
+    }
+    #elementosSelect{
+        max-height:200px;
+    }
+    #armasSelect{
+        max-height:200px;
+    }
+}
+@media(max-width: 429px) {
+    #fondopantalla{
+        padding: 10px;
+    }
+    #personajesFila{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .personaje{
+        width:60px;
+        height: 60px;
+    }
+    .nombrePersonaje{
+        font-size: 11px;
+        margin-left: -7px;
+
+        
+    }
+    .miniElemento{
+        right: 5px;
+        top: 20px;
+        width: 15px;
+        height: 15px;
+    }
+    .elementoPeque{
+        width: 50px;
+        height: 50px;
+    }
+    #elementosSelect{
+        max-height:200px;
+    }
+    #armasSelect{
+        max-height:200px;
+    }
+    #bloque1 p{
+        width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 12px;
+    }
+    .cuadroBuildsInterior{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+    .buildCompleta{
+        width: 100%;
+        padding: 0px;
+    }
+    .bloqueBuild{
+        padding: 1px;
+        padding-top: 30px;
+    }
+    .bloqueArmas{
+        padding: 1px;
+        padding-left: 15px;
+    }
+}

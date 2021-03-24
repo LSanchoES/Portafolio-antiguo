@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset='utf-8' />
+    <meta name='viewport' content="width=device-width, user-scalable=no" />
+    <meta http-equiv="'X-UA-Compatible" content="ie=edge">
+    <title>Black Jack</title>
+    <link rel="stylesheet" href="assets/bootstrap4scr/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+    <div class=" container-fluid m-0 p-0 w-100">
+        <div id='superior' class="row">
+            <header class="col-12">
+                <i class="fa fa-header m-0 p-0 w-100" aria-hidden="true"></i>
+                <h1 class=" badge-dark  d-flex justify-content-center h-100 p-0 m-0">BLACK JACK</h1>
+            </header>
+        </div>
+        <div id="mesa" class="row mt-2">
+            <div id="divBotones" class="col-12 text-center mt-2">
+                <button id="btnNuevo" class="btn btn-danger">Nuevo Juego</button>
+                <button id="btnPedir" class="btn btn-primary">Pedir Carta</button>
+                <button id="btnDetener" class="btn btn-primary">Detener</button>
+            </div>
+            <div class="row container">
+                <div class="col">
+                    <h1 class=" titulitis">Jugador 1 - <small>0</small></h1>
+                    <div id="jugador-cartas">
+                        <!-- <img class="carta" src="assets/cartas/10C.png" alt=""> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row container mt-2">
+                <div class="col">
+                    <h1 class="titulitis">Computadora - <small>0</small></h1>
+                    <div id="computadora-cartas">
+                        <!-- <img class="carta" src="assets/cartas/3C.png" alt=""> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--FIN MESA-->
+    </div>
+    <!--FIN CONTAINER-->
+
+    <script src="assets/bootstrap4scr/jquery/jquery-3.5.1.min.js"></script>
+    <script src="assets/bootstrap4scr/js/bootstrap.min.js"></script>
+    <script src="assets/js/underscore-min.js"></script>
+    <script src="assets/js/juego.js"></script>
+</body>

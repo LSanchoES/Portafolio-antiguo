@@ -1,0 +1,16 @@
+body{
+    background: url(../img/hojas.jpg);
+}
+#logo{
+    background: #325e3d;
+}
+#menu ul li:hover{
+    background: #325e3d;
+}
+.button-more{
+    background: #325e3d;
+}
+.ui-state-active{
+    background:#325e3d !important;
+    border: 1px solid #325e3d !important  ;
+}
